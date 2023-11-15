@@ -3,5 +3,7 @@
 <h3>Домашняя страница</h3>
 {% if user.is_authenticated %}
 <h4>Здравствуйте, {{user.first_name}}</h4>
+{% else %}
+<h4>Вы не аутентифицированы</h4>
 {% endif %}
 {% endblock %}
