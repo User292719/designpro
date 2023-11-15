@@ -11,13 +11,6 @@ class ConfirmField(forms.Field):
                 "Поставьте галочку о согласии"
             )
 
-# def password_validator(self, data):
-#     print(data)
-#     if self.password.data != data:
-#         raise forms.ValidationError(
-#             "Ошибка: "
-#             "введеные пароли не совпадают"
-#         )
 
 class UserForm(forms.ModelForm):
     username = forms.CharField()
